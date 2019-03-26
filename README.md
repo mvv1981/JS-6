@@ -8,21 +8,27 @@ ADD — добавляет контакт
 REMOVE_PHONE — удаляет номер
 SHOW — возвращает содержимое телефонной книги
 
+```js 
 var phoneBook = require('./index.js');
 phoneBook('ADD Ivan 555-10-01,555-10-03');
 phoneBook('ADD Ivan 555-10-02');
 console.info(phoneBook('SHOW'));
+```
 // Вывод:
 // ["Ivan: 555-10-01, 555-10-03, 555-10-02"]
 
+```js 
 phoneBook('REMOVE_PHONE 555-10-03');
 phoneBook('ADD Alex 555-20-01');
 phoneBook('SHOW');
+```
 // Вывод:
 // ["Alex: 555-20-01", "Ivan: 555-10-01, 555-10-02"]
 
+```js 
 phoneBook('REMOVE_PHONE 555-20-01');
 phoneBook('SHOW');
+```
 // Вывод:
 // ["Ivan: 555-10-01, 555-10-02"]
 
@@ -55,6 +61,7 @@ SHOW
 ## Подсказка
 В этой задаче удобно разбить операции над телефонной книгой на отдельные функции. Их следует вызывать для конкретной операции. При использовании такой декомпозиции важно не забыть вернуть результат выполнения функции. Иначе основная функция будет возвращать undefined.
 
+```js 
 module.exports = function (command) {
     // ...
     // var commandName = ... ;
@@ -67,5 +74,5 @@ module.exports = function (command) {
         }
     // ...Обработка других команд... 
 }
-
+```
 
