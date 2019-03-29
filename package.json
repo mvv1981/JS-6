@@ -1,0 +1,19 @@
+{
+  "name": "js-6",
+  "version": "1.0.0",
+  "description": "В этом задании необходимо реализовать функцию, через которую можно управлять телефонной книгой.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvv1981/JS-6.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mvv1981/JS-6/issues"
+  },
+  "homepage": "https://github.com/mvv1981/JS-6#readme"
+}
