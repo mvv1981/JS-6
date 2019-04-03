@@ -1,3 +1,4 @@
+console.info('Барабаш Максим Сергеевич');
 // Встроенный в Node.JS модуль для проверок
 var assert = require('assert');
 
