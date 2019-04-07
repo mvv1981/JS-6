@@ -15,7 +15,7 @@ module.exports = function (command) {
         var personName = arr[1];
         var phoneNumbers = arr[2].split(',');
         
-        var addContact = function() {            
+        function addContact() {            
                 for(var key in phoneBook) {
                 if(key === personName) {
                    phoneBook[key] = phoneBook[key].concat(phoneNumbers);
@@ -32,7 +32,7 @@ module.exports = function (command) {
     
     if(commandName === 'REMOVE_PHONE') {
         var phoneNumber = arr[1];
-        var removePhone = function() {
+        function removePhone() {
             for(var key in phoneBook) {
                 if(phoneBook[key].indexOf(phoneNumber) !== -1) {
                     var index = phoneBook[key].indexOf(phoneNumber);
@@ -49,7 +49,7 @@ module.exports = function (command) {
     }
     
     if(commandName === 'SHOW') {
-        var showPhoneBook = function() {
+        function showPhoneBook() {
             var strResult = [];
             for(var key in phoneBook) {
                 if(phoneBook[key].length === 0) continue;
