@@ -52,4 +52,4 @@ assert.deepEqual(
     'В телефонной книге: "Ivan: 555-10-01, 555-10-02"'
 );
 
-console.info('OK!');
+console.info('Unit test is OK!');
